@@ -1,7 +1,7 @@
 # Sparkify-Data-Lake
 
 ## 1. Background
-Sparkify, a rapidly growing music streaming startup, is planning to transfer its user and song databases from a data warehouse to a data lake, in response to its swiftly increasing data volume. To achieve this, our task is to construct an ETL (Extract, Transform, Load) pipeline. This pipeline will be designed to extract both databases from S3, process them using Spark, and then reload the data into S3, formatted as a collection of dimensional tables."
+Sparkify, a rapidly growing music streaming startup, is planning to transfer its user and song databases from a data warehouse to a data lake, in response to its swiftly increasing data volume. To achieve this, our task is to construct an ETL (Extract, Transform, Load) pipeline. 
 
 ## 2. Project Datasets
 Current user activity log data and song data resides in S3. The user activity log is a directory of JSON logs  and song data is a directory with JSON metadata.
@@ -41,4 +41,16 @@ The project will create a star schema for queries on song play analysis, includi
    * start_time, hour, day, week, month, year, weekday
   
 ## 4. ETL pipeline
+Run etl.py to perform ETL pipeline, include:
+* Extract user activity log data and song data from S3
+* Transform them using Spark
+* Reload the data into S3, formatted as a collection of dimensional tables
+
+## 5. AWS set up
+1) Create an IAM user
+2) Create an AWS EMR cluster
+3) Create a S3 bucket connecting the EMR cluster
+4) Input the AWS credentials config values into the dl.cfg file
+
+## Acknowledgement
 
