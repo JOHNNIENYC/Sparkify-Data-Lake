@@ -52,5 +52,6 @@ Run etl.py to perform ETL pipeline, include:
 3) Create a S3 bucket connecting the EMR cluster
 4) Input the AWS credentials config values into the dl.cfg file
 
-## Acknowledgement
+## 6. Acknowledgement
+Source: Udacity 
 
