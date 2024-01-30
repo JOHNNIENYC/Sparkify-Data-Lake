@@ -40,6 +40,9 @@ The project will create a star schema for queries on song play analysis, includi
 5) time
    * start_time, hour, day, week, month, year, weekday
   
+![Untitled (1)](https://github.com/JOHNNIENYC/Sparkify-Data-Lake/assets/108529441/9b9acd50-77be-4e05-b2a9-6fd404a2065e)
+
+  
 ## 4. ETL pipeline
 Run etl.py to perform ETL pipeline, include:
 * Extract user activity log data and song data from S3
